@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+
+# build output
+frontend/dist/
+
+# environment / secrets
+backend/.env
+frontend/.env
+
+# uploaded media
+backend/uploads/
+
+# logs & OS junk
+*.log
+Thumbs.db
+.DS_Store

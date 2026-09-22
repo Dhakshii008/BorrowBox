@@ -1,0 +1,101 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,jsx}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#eef2ff',
+          100: '#e0e7ff',
+          200: '#c7d2fe',
+          300: '#a5b4fc',
+          400: '#818cf8',
+          500: '#6366f1',
+          600: '#4f46e5',
+          700: '#4338ca',
+          800: '#3730a3',
+          900: '#312e81',
+          950: '#1e1b4b',
+        },
+        accent: {
+          50: '#ecfdf5',
+          100: '#d1fae5',
+          200: '#a7f3d0',
+          300: '#6ee7b7',
+          400: '#34d399',
+          500: '#10b981',
+          600: '#059669',
+          700: '#047857',
+          800: '#065f46',
+          900: '#064e3b',
+        },
+        surface: '#F8FAFC',
+        ink: '#0F172A',
+        muted: '#64748B',
+        line: '#E2E8F0',
+      },
+      fontFamily: {
+        sans: ['Inter Variable', 'Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        display: ['Inter Variable', 'Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'sans-serif'],
+      },
+      boxShadow: {
+        card: '0 1px 2px 0 rgb(15 23 42 / 0.04), 0 1px 3px 0 rgb(15 23 42 / 0.06)',
+        soft: '0 4px 12px -2px rgb(15 23 42 / 0.06), 0 2px 6px -2px rgb(15 23 42 / 0.04)',
+        lift: '0 12px 28px -8px rgb(15 23 42 / 0.14), 0 4px 12px -4px rgb(15 23 42 / 0.08)',
+        glow: '0 0 0 1px rgb(79 70 229 / 0.08), 0 8px 30px -8px rgb(79 70 229 / 0.35)',
+        'glow-accent': '0 0 0 1px rgb(16 185 129 / 0.08), 0 8px 30px -8px rgb(16 185 129 / 0.35)',
+        modal: '0 24px 64px -16px rgb(15 23 42 / 0.28)',
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.25s ease-out',
+        'slide-up': 'slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1)',
+        'scale-in': 'scaleIn 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+        float: 'float 9s ease-in-out infinite',
+        'float-slow': 'float 14s ease-in-out infinite',
+        'blob-a': 'blob 22s ease-in-out infinite',
+        'blob-b': 'blob 28s ease-in-out infinite reverse',
+        'blob-c': 'blob 34s ease-in-out infinite alternate',
+        shimmer: 'shimmer 1.8s linear infinite',
+        'spin-slow': 'spin 16s linear infinite',
+        'scan-line': 'scanLine 2.6s cubic-bezier(0.4, 0, 0.2, 1) infinite',
+        'pulse-soft': 'pulseSoft 2.6s ease-in-out infinite',
+        'draw-line': 'drawLine 1.4s cubic-bezier(0.4, 0, 0.2, 1) forwards',
+      },
+      keyframes: {
+        fadeIn: { from: { opacity: '0' }, to: { opacity: '1' } },
+        slideUp: { from: { opacity: '0', transform: 'translateY(14px)' }, to: { opacity: '1', transform: 'translateY(0)' } },
+        scaleIn: { from: { opacity: '0', transform: 'scale(0.96)' }, to: { opacity: '1', transform: 'scale(1)' } },
+        float: {
+          '0%, 100%': { transform: 'translateY(0) translateX(0)' },
+          '50%': { transform: 'translateY(-16px) translateX(6px)' },
+        },
+        blob: {
+          '0%, 100%': { transform: 'translate(0, 0) scale(1)' },
+          '33%': { transform: 'translate(36px, -42px) scale(1.12)' },
+          '66%': { transform: 'translate(-28px, 24px) scale(0.94)' },
+        },
+        shimmer: {
+          from: { backgroundPosition: '200% 0' },
+          to: { backgroundPosition: '-200% 0' },
+        },
+        scanLine: {
+          '0%': { top: '6%' },
+          '50%': { top: '92%' },
+          '100%': { top: '6%' },
+        },
+        pulseSoft: {
+          '0%, 100%': { opacity: '0.55' },
+          '50%': { opacity: '1' },
+        },
+        drawLine: {
+          from: { strokeDashoffset: '1' },
+          to: { strokeDashoffset: '0' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};

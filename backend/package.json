@@ -1,0 +1,33 @@
+{
+  "name": "borrowbox-backend",
+  "version": "1.0.0",
+  "description": "BorrowBox API server - free campus peer-to-peer item borrowing platform",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/seed/seed.js"
+  },
+  "keywords": [
+    "mern",
+    "borrow",
+    "campus",
+    "express",
+    "mongoose"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.3",
+    "express-validator": "^7.3.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.24.4",
+    "morgan": "^1.12.1",
+    "multer": "^1.4.5-lts.1",
+    "qrcode": "^1.5.4",
+    "socket.io": "^4.8.3"
+  }
+}

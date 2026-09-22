@@ -1,0 +1,15 @@
+{
+  "name": "borrowbox",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BorrowBox - free campus peer-to-peer item borrowing platform (MERN)",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "seed": "npm --prefix backend run seed",
+    "seed:reset": "npm --prefix backend run seed -- --reset",
+    "test:workflow": "powershell -ExecutionPolicy Bypass -File backend/workflow-test.ps1"
+  }
+}
