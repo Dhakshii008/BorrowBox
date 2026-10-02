@@ -12,6 +12,6 @@ initSocket(server);
 
 registerNotifier(emitToUser);
 
-server.listen(PORT, () => {
+server.listen(PORT, "0.0.0.0", () => {
   console.log(`BorrowBox API running on http://localhost:${PORT}`);
 });
